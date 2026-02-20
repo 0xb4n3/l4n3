@@ -3,7 +3,6 @@
 B4n3 bash scripts to setup my beautifullycrousti Linux OS
 
 ## Setup
----
 
 ```sh
 visudo
@@ -17,7 +16,9 @@ sudo ./install.Sh
 
 ### Manual things to do
 
-After install, need to do following things manually :
+After install, need to do following things manually 
+
+#### 1. Gnome
 
 - Extensions --> User theme --> whiteSur-Dark-Blue
 - Extensions --> Switcher --> config :
@@ -32,10 +33,14 @@ After install, need to do following things manually :
 dconf reset -f /org/gnome/
 ```
 
+#### 2. System
 - config timeshift backup
 - import wordlists dir
 - install docker
 
+#### 3. Offsec
+
+- Install Burp and extensions
 
 ## Tools - env - config
 ---
