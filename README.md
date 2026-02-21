@@ -19,7 +19,7 @@ sudo ./install.Sh
 After install, need to do following things manually 
 
 #### 1. Gnome
-
+- Installer Gnome extensions : Dash to Dock, Clipboard Indicator, Switcher, User themes, blur-my-shell
 - Extensions --> User theme --> whiteSur-Dark-Blue
 - Extensions --> Switcher --> config :
     - raccourcis : `super+d`
@@ -102,7 +102,7 @@ dconf reset -f /org/gnome/
 ### GNOME & Desktop ENV
 
 - packages
-- Gnome extensions : Dash to Dock, Clipboard Indicator, Switcher, User themes
+- Gnome extensions : Dash to Dock, Clipboard Indicator, Switcher, User themes, blur-my-shell
 - terminator :
     - `terminator/config`
 - gtk theme : whitesur
@@ -174,7 +174,9 @@ dconf reset -f /org/gnome/
 
 
 
-## Instructions
+## To do
+
+- definir thunar et terminator default
 
 
 

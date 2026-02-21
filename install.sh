@@ -27,8 +27,9 @@ dev_packages=(
     'golang'
     'ruby-full'
     'build-essential'
-    'nodejs npm'
-    'rustc cargo'
+    'npm'
+    'rustc'
+    'cargo'
 )
 
 
@@ -154,25 +155,28 @@ sudo apt install /tmp/vscode.deb
 ## Dev Packages install ##
 for package in "${dev_packages[@]}"; do
   apt install -y "$package"
+done
 
 
 ################# GNOME & Desktop env config #################
 
-apt install gnome-shell-extensions gnome-tweaks thunar terminator
+apt install gnome-shell-extensions gnome-tweaks thunar terminator -y
 
-cp -r ./configs/terminator /home/$SUDO_USER/.config/
+sudo -u "$SUDO_USER" bash -c 'cp -r ./configs/terminator /home/$SUDO_USER/.config/'
 
 ## gtk theme install
+sudo -u "$SUDO_USER" bash -c '
 mkdir configs/gtk
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git configs/gtk
 chmod +x ./configs/gtk/install.sh
-./configs/gtk/install.sh
+./configs/gtk/install.sh -t blue'
 
 ##  icons theme
+sudo -u "$SUDO_USER" bash -c '
 mkdir configs/icons
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git configs/icons
 chmod +x ./configs/icons/install.sh
-./configs/icons/install.sh
+./configs/icons/install.sh'
 
 
 
