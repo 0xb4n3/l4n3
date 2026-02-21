@@ -11,6 +11,7 @@ b4n3 ALL=(ALL:ALL) ALL
 
 ```sh
 chmod +x install.sh
+chmod +x configs/offsec.sh
 sudo ./install.Sh
 ```
 
