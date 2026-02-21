@@ -32,6 +32,7 @@ After install, need to do following things manually
 - cp `.obsidian` à la racine du vault
 
 - terminator : --> profil --> couleurs --> utiliser un background transparent
+- paramètre --> système --> utilisateurs --> changer img profile
 
 ```sh
 dconf reset -f /org/gnome/
