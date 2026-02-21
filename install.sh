@@ -188,7 +188,7 @@ chmod +x ./configs/icons/install.sh
 
 ################# offsec env config #################
 
-sudo -u "$SUDO_USER" bash -c ' ./configs/offsec.sh'
+#sudo -u "$SUDO_USER" bash -c ' ./configs/offsec.sh'
 
 
 
