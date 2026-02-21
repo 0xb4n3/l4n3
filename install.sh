@@ -162,6 +162,10 @@ done
 
 apt install gnome-shell-extensions gnome-tweaks thunar terminator -y
 
+sudo -u "$SUDO_USER" bash -c '
+xdg-mime default thunar.desktop inode/directory
+xdg-mime default thunar.desktop application/x-gnome-saved-search'
+
 sudo -u "$SUDO_USER" bash -c 'cp -r ./configs/terminator /home/$SUDO_USER/.config/'
 
 ## gtk theme install
@@ -169,7 +173,9 @@ sudo -u "$SUDO_USER" bash -c '
 mkdir configs/gtk
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git configs/gtk
 chmod +x ./configs/gtk/install.sh
-./configs/gtk/install.sh -t blue'
+./configs/gtk/install.sh -t blue -l -N '
+
+./configs/gtk/tweaks.sh --gdm -b configs/img/bg.jpg
 
 ##  icons theme
 sudo -u "$SUDO_USER" bash -c '

@@ -14,20 +14,24 @@ chmod +x install.sh
 sudo ./install.Sh
 ```
 
-### Manual things to do
+## Manual things to do
 
 After install, need to do following things manually 
 
-#### 1. Gnome
+### 1. Gnome
+
 - Installer Gnome extensions : Dash to Dock, Clipboard Indicator, Switcher, User themes, blur-my-shell
 - Extensions --> User theme --> whiteSur-Dark-Blue
 - Extensions --> Switcher --> config :
     - raccourcis : `super+d`
+- extension --> Dash to Dock
 - Extensions système :
 - config flameshot raccourcis : paramètres --> clavier -- raccourcis --> raccourcis personnalisés --> commande `flameshot gui`
-- icons ??
+- icons : tweaks --> apparence --> whitesur-Dark-blue
 - Configs raccourcis workspace
 - cp `.obsidian` à la racine du vault
+
+- terminator : --> profil --> couleurs --> utiliser un background transparent
 
 ```sh
 dconf reset -f /org/gnome/
