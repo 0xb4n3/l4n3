@@ -165,6 +165,7 @@ dconf reset -f /org/gnome/
 - Burpsuite
     - Extensions: PwnFox, hackvektor, auth analyze, json web token, jwt editor, param miner
 - ffuf
+- projectdiscovery pdtm
 - subfinder
 - paramspider
 - jwt_tool
